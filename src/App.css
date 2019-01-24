@@ -1,32 +1,159 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.name-heading, .designation, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-1 {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative
 }
 
-.App-link {
-  color: #61dafb;
+.home-content-wrap {
+  position: absolute;
+  left: 10vw;
+  right:10vw;
+  top: 55px;
+  padding-right: 20vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.name-heading {
+  font-weight: 300;
+  font-size: 4rem;
+}
+.designation {
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+.dp {
+  border-radius: 50%;
+  margin-bottom: 13px;
+  margin-top: 74px;
+  width: auto;
+  height: 200px;
+}
+
+#Nav header {
+  background-color: transparent !important;
+}
+
+.idCard {
+  transform: scale(1.8) translateY(-15px) translateX(10px);
+  width: 45vw;
+  position: absolute; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.shapes {
+  transform: scale(1.4);
+  height: auto;
+  width:100vw;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 150vh solid transparent;
+	border-right: 100vw solid #555;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+}
+
+.margin-for-effect {
+  text-align:left;
+  padding:40px;
+}
+
+.margin-effect {
+  margin-top:70px;
+}
+
+.parallax-image {
+  width:100vw;
+  height:auto;
+}
+
+
+@media screen and (max-width: 850px) {
+  .shapes {
+    transform: scale(1);
+    height: 100vh;
+    width: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .idCard {
+    top: 540px;
+    right: unset;
+    transform: scale(5) rotate(-3deg);
+    width: 40vw;
+    left: 54px;
   }
+  .home-content-wrap {
+    left: 7vw;
+    right: 7vw;
+    padding: 0;
+  }
+  .name-heading {
+    font-size: 2rem;
+  }
+  .designation {
+    font-size: 2rem;
+  }
+  .designation + p {
+    font-size: 1rem !important;
+  }
+  .dp {
+    margin-top: 44px;
+    width: 100px;
+    height: auto;
+  }
+  .margin-for-effect {
+    padding:20px;
+  }
+  
+  .margin-effect {
+    margin-top:40px !important;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  /* Portrait styles here */
+  @media screen and (max-width: 850px) {
+    .parallax-image {
+      width:auto;
+      height:100vh;
+      transform: translateX(-190px)
+    }
+    .margin-effect {
+      margin-top:0px !important;
+    }
+    .shapes {
+      transform: scale(1) rotate(90deg);
+    }
+  }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+  /* Landscape styles here */
+   @media screen and (max-width: 850px) {
+
+    .idCard {
+      transform: scale(1.8) translateY(0px) translateX(40px);
+      width: 45vw;
+      position: absolute; 
+      right: 0;
+      top: 0;
+      bottom: 0;
+      left: unset;
+    }
+   }
 }
