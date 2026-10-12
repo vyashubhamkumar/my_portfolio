@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lib/accessible-react-modal/static/css/main.0732046f.css",
+    "main.js": "/lib/accessible-react-modal/static/js/main.63627e24.js",
+    "static/js/787.99fa2477.chunk.js": "/lib/accessible-react-modal/static/js/787.99fa2477.chunk.js",
+    "index.html": "/lib/accessible-react-modal/index.html",
+    "main.0732046f.css.map": "/lib/accessible-react-modal/static/css/main.0732046f.css.map",
+    "main.63627e24.js.map": "/lib/accessible-react-modal/static/js/main.63627e24.js.map",
+    "787.99fa2477.chunk.js.map": "/lib/accessible-react-modal/static/js/787.99fa2477.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0732046f.css",
+    "static/js/main.63627e24.js"
+  ]
+}
